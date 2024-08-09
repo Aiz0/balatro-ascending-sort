@@ -1,0 +1,32 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = "G.hand:sort('desc')"
+position = 'at'
+payload = '''
+if G.hand.config.sort == "desc" or G.hand.config.sort == "suit asc" then
+    G.hand:sort('asc')
+else
+    G.hand:sort('desc')
+end
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = "G.hand:sort('suit desc')"
+position = 'at'
+payload = '''
+if G.hand.config.sort == "suit desc" or G.hand.config.sort == "asc" then
+    G.hand:sort('suit asc')
+else
+    G.hand:sort('suit desc')
+end
+'''
+match_indent = true
