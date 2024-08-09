@@ -1,6 +1,6 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: Ascending sort
---- MOD_ID: AizSort
+--- MOD_ID: AizAscendingSort
 --- MOD_AUTHOR: [Aiz]
 --- MOD_DESCRIPTION: Click a sort button again to toggle ascending sort. you can also set your default sort.
 --- BADGE_COLOUR: 0ea5e9
@@ -12,7 +12,7 @@
 
 local config = SMODS.current_mod.config
 
-G.FUNCS.AizSort_callback = function(args)
+G.FUNCS.AizAscendingSort_callback = function(args)
     args = args or {}
     if
         args.cycle_config
@@ -40,7 +40,7 @@ SMODS.current_mod.config_tab = function()
                 options = config.default_sort.options,
                 ref_table = config.default_sort,
                 ref_value = "value",
-                opt_callback = "AizSort_callback",
+                opt_callback = "AizAscendingSort_callback",
             }),
         },
     }
