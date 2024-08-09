@@ -30,3 +30,15 @@ else
 end
 '''
 match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'cardarea.lua'
+pattern = "self.config.sort = config.sort or 'desc'"
+position = 'at'
+payload = '''
+self.config.sort = config.sort or
+(SMODS and SMODS.Mods['AizAscendingSort'].config.default_sort.options[SMODS.Mods['AizAscendingSort'].config.default_sort.value])
+or 'desc'
+'''
+match_indent = true
