@@ -16,7 +16,7 @@ SMODS.current_mod.config_tab = function()
         n = G.UIT.ROOT,
         config = {
             r = 0.1,
-            align = "t",
+            align = "tm",
             padding = 0.1,
             colour = G.C.BLACK,
             minw = 8,
@@ -24,6 +24,7 @@ SMODS.current_mod.config_tab = function()
         },
         nodes = {
             create_option_cycle({
+                label = "Default sort",
                 current_option = config.default_sort.value,
                 options = config.default_sort.options,
                 ref_table = config.default_sort,
