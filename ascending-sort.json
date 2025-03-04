@@ -1,0 +1,12 @@
+{
+  "id": "AizAscendingSort",
+  "name": "Ascending sort",
+  "author": ["Aiz"],
+  "description": "Click a sort button again to toggle ascending sort. you can also set your default sort.",
+  "prefix": "AizAscendingSort",
+  "main_file": "main.lua",
+  "priority": 0,
+  "badge_colour": "0ea5e9",
+  "version": "1.0.0",
+  "dependencies": ["Steamodded (>=1.*)", "Lovely"]
+}

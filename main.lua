@@ -1,15 +1,3 @@
---- STEAMODDED HEADER
---- MOD_NAME: Ascending sort
---- MOD_ID: AizAscendingSort
---- MOD_AUTHOR: [Aiz]
---- MOD_DESCRIPTION: Click a sort button again to toggle ascending sort. you can also set your default sort.
---- BADGE_COLOUR: 0ea5e9
---- VERSION: 1.0.0
---- LOADER_VERSION_GEQ: 1.0.0-ALPHA-0731b-STEAMODDED
-
-----------------------------------------------
-------------MOD CODE -------------------------
-
 local config = SMODS.current_mod.config
 
 G.FUNCS.AizAscendingSort_callback = function(args)
