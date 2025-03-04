@@ -2,7 +2,7 @@
   "id": "AizAscendingSort",
   "name": "Ascending sort",
   "author": ["Aiz"],
-  "description": "Click a sort button again to toggle ascending sort. you can also set your default sort.",
+  "description": "Click a sort button again to toggle ascending sort. You can also set your default sort in the config.",
   "prefix": "AizAscendingSort",
   "main_file": "main.lua",
   "priority": 0,
